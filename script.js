@@ -140,7 +140,6 @@ converter.controller('converterController', function($scope) {
     };
 
     $scope.findLetterByKey = function(key) {
-        // var asciiKeys = (Object.keys($scope.ascii));
        return $scope.ascii[key];
     }
 
@@ -158,7 +157,6 @@ converter.controller('converterController', function($scope) {
             console.log(stepResult);
             letterResult = $scope.findLetterByKey(stepResult);
             textResult.push(letterResult);
-            console.log(textResult);
         }
 
         $scope.letters = textResult;
@@ -228,7 +226,6 @@ converter.controller('converterController', function($scope) {
                 stepBinResult = $scope.decypherTextSingle(text[i][j]);
                 stepBinResult = stepBinResult.join("");
                 finalBinResult.push(stepBinResult);
-                console.log(stepBinResult, finalBinResult);
             }
         }
     };
