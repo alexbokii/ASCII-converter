@@ -19,14 +19,12 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 center-block">
                 <h2>Binary to text</h2>
-                <textarea rows="4" cols="50" ng-model="binary" placeholder="Separate figures using space">{{binary}}</textarea>
-                <button class="btn btn-primary" ng-click="decypherBinaryMultiple()">Convert</button>
+                <textarea placeholder="Use comma to separate values, ex. 10001001, 10000011" rows="4" cols="50" ng-model="binary" ng-list ng-change="convertBinary()"></textarea>
             </div>
 
             <div class="col-xs-12 col-sm-6">
                 <h2>Text to binary</h2>
-                <textarea rows="4" cols="50" ng-model="letters">{{letters}}</textarea>
-                <button class="btn btn-primary" ng-click="decypherTextMultiple()">Convert</button>
+                <textarea rows="4" cols="50" ng-model="letters" ng-change="convertText()"></textarea>
             </div>
         </div>
     </div>
